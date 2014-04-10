@@ -1,0 +1,136 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+     android:layout_weight="1"
+   >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+             android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnInput"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_rounded_corners"
+                android:textColor="#FFFFFF"
+                android:text="@string/Input" />
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnLog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_rounded_corners"
+                android:textColor="#FFFFFF"
+                android:text="@string/Log" />
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnUserData"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_rounded_corners"
+                android:textColor="#FFFFFF"
+                android:text="@string/Userdata" />
+
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow04"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnBluetooth"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_rounded_corners"
+                android:textColor="#FFFFFF"
+                android:text="@string/Bluetooth" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow05"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_rounded_corners"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#000000"
+                android:text="@string/Email" />
+
+        </TableRow>
+
+    </TableRow>
+<TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/button_rounded_corners"
+        android:text="@string/Reminder"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000" />
+
+        </TableRow>
+</TableLayout>

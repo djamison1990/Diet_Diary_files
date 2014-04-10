@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="AllowBackup" severity="ignore" />
+    <issue id="ButtonStyle">
+        <ignore path="res/layout/diary_input.xml" />
+    </issue>
+    <issue id="OldTargetApi" severity="ignore" />
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/example/diet/diary/Diet_Diary.java" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/diary_input.xml" />
+        <ignore path="res/layout/home.xml" />
+    </issue>
+</lint>

@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">UUJ Diet Diary</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_diet__diary">Diet_Diary</string>
+    <string-array name="input_types">
+        <item >Meal</item>
+        <item >Exercise</item>
+        <item >Nutrition Breakdown</item>
+       </string-array>
+        <string-array name="initial_input_types">
+        <item >Meal</item>
+        <item >Exercise</item>
+       </string-array>
+       <string-array name="measurements">
+        <item >Grams(g)</item>
+        <item >Millilitres(ml)</item>
+        <item >Pints(568ml)</item>
+        <item >Litres(L)</item>
+        <item >Teaspoon(Tsp)</item>
+        <item >Tablespoon(Tbsp)</item>
+       </string-array>
+    <string name="Time">Time</string>
+    <string name="Food">Food/Drink</string>
+    <string name="Portion">Portion Size</string>
+    <string name="Notes">Notes</string>
+    <string name="Exercise">Exercise</string>
+    <string name="Duration">Duration</string>
+    <string name="Submit">Submit and View</string>
+    <string name="Intensity">Intensity</string>
+    <string name="Back">Back</string>
+    <string name="Log">View Saved Data</string>
+    <string name="Input">Log Meals or Exercise</string>
+    <string name="Export">Export Data</string>
+    <string name="Blank"> </string>
+    <string name="Bluetooth">Send results using bluetooth</string>
+    <string name="Email">Send results using email</string>
+    <string name="Userdata">Input User Data</string>
+    <string name="SubmitReturn">Submit</string>
+     <string name="Settings">Settings</string>
+    <string name="SubmitUser">Submit User Data</string>
+    <string name="UserActivityLevel">Activity Level</string>
+    <string name="UserDOB">Date of Birth</string>
+    <string name="UserHeight">Height</string>
+    <string name="UserWeight">Weight</string>
+    <string-array name="activity_levels">
+        <item >Non active</item>
+        <item >Moderatly active</item>
+        <item >Active</item>
+        <item >Very active</item>
+    </string-array>
+     <string name="Reminder">Set Reminders</string>
+    <string name="Reminders">Set reminder time</string>
+    <string name="EnterData">Enter Data</string>
+    <string name="SetReminders">Set reminders</string>
+    <string name="CancelReminders">Cancel reminders</string>
+
+</resources>

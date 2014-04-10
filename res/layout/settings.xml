@@ -1,0 +1,73 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/bg" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+       android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight=".5" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".25"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/Reminders"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+          android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1" >
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+              android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnNotify"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:text="@string/SetReminders" />
+
+      
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+       android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1" >
+        
+          <Button
+            android:id="@+id/btnCancelNotifications"
+           android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"
+            android:text="@string/CancelReminders" />
+          
+    </TableRow>
+
+</TableLayout>

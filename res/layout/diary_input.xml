@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    android:background="@drawable/bg">
+
+    
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                                android:layout_height="fill_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:id="@+id/tableRow11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/etSearchDb"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/textbox_rounded_corners"
+                                android:ems="10"
+                                android:inputType="text"
+                               
+                                android:text="@string/Blank" >
+
+                                <requestFocus android:layout_width="wrap_content" />
+
+                            </EditText>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" 
+                            android:layout_weight="12">
+
+                            <ListView
+                                android:id="@+id/lvDisplaySearch"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" 
+                                android:layout_weight="15"
+                                >
+                            </ListView>
+
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                     android:layout_width="match_parent"
+                                android:layout_height="fill_parent" >
+
+                    <ListView
+                        android:id="@+id/lvDisplayFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent" >
+
+                    </ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <Spinner
+                                android:id="@+id/spinInput"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:entries="@array/initial_input_types"
+                                android:gravity="center_horizontal" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom|center_horizontal"
+                                android:shadowColor="#FFFFFF"
+                                android:shadowRadius="5"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="25sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/etInput1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/textbox_rounded_corners"
+                                android:ems="10"
+                                android:inputType="time"
+                                android:maxLength="4"
+                                android:text="@string/Blank" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tvHeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="bottom|center_horizontal"
+                                android:shadowColor="#FFFFFF"
+                                android:shadowRadius="5"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="25sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tblList"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <ListView
+                                android:id="@+id/lvFood"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:visibility="gone" >
+                            </ListView>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/etInput2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/textbox_rounded_corners"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="@string/Blank" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tvDOB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="bottom|center_horizontal"
+                                android:shadowColor="#FFFFFF"
+                                android:shadowRadius="5"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="25sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/etInput3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/textbox_rounded_corners"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="@string/Blank" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tvNotes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="bottom|center_horizontal"
+                                android:shadowColor="#FFFFFF"
+                                android:shadowRadius="5"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="25sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/etInput4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/textbox_rounded_corners"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="@string/Blank" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <Button
+                                android:id="@+id/btnSubmitView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/Submit" />
+
+                            <Button
+                                android:id="@+id/btnSubmitReturn"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/SubmitReturn" />
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TableRow
+                            android:id="@+id/TableRow09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tvDataEntryItem"
+                                   android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom|center_horizontal"
+                                android:shadowColor="#FFFFFF"
+                                android:shadowRadius="5"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="25sp"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TableRow07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <EditText
+                                android:id="@+id/etEntryWeight"
+                                   android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".25"
+                                android:background="@drawable/textbox_rounded_corners"
+                                android:ems="10"
+                                android:text="@string/Blank" 
+                                android:inputType="number" />
+                            
+                            <Spinner
+                                android:id="@+id/spinMeasurements"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".75"
+                                android:entries="@array/measurements"
+                                android:gravity="center_horizontal" />
+
+                        </TableRow>
+                        
+                        <TableRow
+                            android:id="@+id/TableRow08"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <Button
+                                android:id="@+id/btnEnterNutritionData"
+                                 android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/EnterData" />
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+

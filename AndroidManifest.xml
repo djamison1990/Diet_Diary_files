@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uuj.diet.diary"
+    android:versionCode="3"
+    android:versionName="1.2" >
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+<uses-permission android:name="android.premission.READ_EXTERNAL_STORAGE"/> 
+<uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+ <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+   
+
+    <application
+        android:icon="@drawable/uuj_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="uuj.diet.diary.Diet_Diary"
+            android:label="@string/app_name"
+            android:parentActivityName="uuj.diet.diary.Home" >
+            
+        </activity>
+    <activity
+            android:name="uuj.diet.diary.Diary_Output"
+            android:label="@string/app_name" 
+             android:parentActivityName="uuj.diet.diary.Home">
+            
+        </activity>
+   <activity
+    android:label="@string/app_name"
+    android:name="uuj.diet.diary.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+</activity>
+ <activity
+            android:name="uuj.diet.diary.UserData"
+            android:label="@string/app_name"
+             android:parentActivityName="uuj.diet.diary.Home" >
+            
+        </activity>
+         <activity
+            android:name="uuj.diet.diary.tabs"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+         <activity
+            android:name="uuj.diet.diary.Reminders"
+            android:label="@string/app_name"
+             android:parentActivityName="uuj.diet.diary.Home" >
+            
+        </activity>
+         <receiver android:process=":remote" android:name="uuj.diet.diary.Alarm_Notification"></receiver>
+    </application>
+
+</manifest>
